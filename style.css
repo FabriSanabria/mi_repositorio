@@ -1,0 +1,795 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Coustard', serif;
+f251f9 rosa
+6d62d5 violet
+0065c7 azul
+0072b3 celeste
+071c41 azul osc
+*/
+
+/*body*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.bodyinicio {
+    background-image: url(../ToyPaSalir/acces/images/noche3.jpg);
+    background-size: cover;
+    
+}
+
+/*nav_inicio*/
+#nav_inicio ul{
+    background-color: #071c41;
+    width: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+#nav_inicio ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #f251f9;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left:20px; 
+    margin-right:20px;
+}
+#nav_inicio ul li:hover{
+    color: #071c41;
+    background-color: #f251f9;
+    transition: all 0.5s;
+}
+/*main_inicio*/
+main h1{
+    color: #f251f9;
+    font-family: 'Coustard', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+main h1::after{
+    content: ' ';
+    text-align: center;
+    color: #f251f9;
+    margin-left: 10px;
+    padding: 0.5%;
+    width: 360px;
+    border-radius: 10%;
+    background: #071c41a0;
+    animation: textrotate 5s linear infinite;
+    -webkit-animation: textrotate 5s linear infinite;
+  }
+  @keyframes textrotate{
+    0%{
+      content: 'Salir';
+    }
+    25%{
+      content: 'Comer';
+    }
+    50%{
+      content: 'Bailar';
+    }
+    100%{
+      content: 'Entretenerme';
+    }
+  }
+main p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+/*section*/
+#section_inicio ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+}
+
+#section_inicio ul li img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+/*media quarys*/
+@media screen and (max-width:1200px){
+    #nav_inicio ul li{
+        font-size: 22px;
+    }
+    main h1{
+        font-size: 40px;
+    }
+    main p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #nav_inicio ul li{
+        font-size: 20px;
+    }
+    main h1{
+        font-size: 38px;
+    }
+    main p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #nav_inicio ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    main h1{
+        font-size: 35px;
+    }
+    main p{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:480px){
+    #nav_inicio ul li{
+        font-size: 12px;
+        margin: 8px;
+    }
+    main h1{
+        font-size: 20px;
+    }
+    main p{
+        font-size: 12px;
+    }
+    section{
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px;
+    }
+}    
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Coustard', serif;
+f251f9 rosa
+6d62d5 violet
+0065c7 azul
+0072b3 celeste
+071c41 azul osc*/
+
+/*Pagina Bailar*/
+
+.bodybailar{
+    background-image: url(../ToyPaSalir/acces/images/fiesta1.jpg);
+    background-size: cover;
+}
+
+#nav_bailar ul{
+    background-color: #f251f9;
+    width: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+#nav_bailar ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #071c41;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left:20px; 
+    margin-right:20px;
+}
+#nav_bailar ul li:hover{
+    color: #f251f9;
+    background-color: #071c41;
+    transition: all 0.5s;
+}
+/*Main Bailar*/
+
+#mainbailar h1{
+    color: #f251f9;
+    font-family: 'Coustard', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+#mainbailar p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+/*section bailar*/
+#section_bailar{
+    background-color: #071c41a0;
+    height: 220px;
+}
+#section_bailar{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin: 50px;
+}
+#section_bailar ul li{
+    list-style: none;
+    font-family:'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 22px;
+    color: #f251f9;
+    margin: 20px;
+}
+/*media quarys*/
+@media screen and (max-width:1200px){
+    #nav_bailar ul li{
+        font-size: 22px;
+    }
+    #mainbailar h1{
+        font-size: 40px;
+    }
+    #mainbailar p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #nav_bailar ul li{
+        font-size: 20px;
+    }
+    #mainbailar h1{
+        font-size: 38px;
+    }
+    #mainbailar p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #nav_bailar ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    #mainbailar h1{
+        font-size: 35px;
+    }
+    #mainbailar p{
+        font-size: 15px;
+    }
+    #section_bailar{
+        height: 60%;
+    }
+    #section_bailar ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width:480px){
+    #nav_bailar ul li{
+        font-size: 12px;
+        margin: 8px;
+    }
+    #mainbailar h1{
+        font-size: 20px;
+    }
+    #mainbailar p{
+        font-size: 12px;
+    }
+    #section_bailar{
+        height: 50%;
+    }
+    #section_bailar ul li{
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+/*Pagina comer*/
+
+.body_comer{
+    background-image: url(../ToyPaSalir/acces/images/cena1.jpg);
+    background-size: cover;
+}
+/*nav_comer*/
+
+#nav_comer ul{
+    background-color: #071c41;
+    width: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    
+}
+#nav_comer ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #f251f9;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left:20px; 
+    margin-right:20px;
+}
+#nav_comer ul li:hover{
+    color: #071c41;
+    background-color: #f251f9;
+    transition: all 0.5s;
+}
+/*main_comer*/
+#main_comer h1{
+    color: #071c41;
+    font-family: 'Coustard', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+#main_comer p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+/*section_comer*/
+#section_comer{
+    background-color: #f351f952;
+    height: 220px;
+}
+#section_comer{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin: 50px;
+}
+#section_comer ul li{
+    list-style: none;
+    font-family:'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 22px;
+    color: #071c41;
+    margin: 20px;
+}
+/*media quarys*/
+@media screen and (max-width:1200px){
+    #nav_comer ul li{
+        font-size: 22px;
+    }
+    #main_comer h1{
+        font-size: 40px;
+    }
+    #main_comer p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #nav_comer ul li{
+        font-size: 20px;
+    }
+    #main_comer h1{
+        font-size: 38px;
+    }
+    #main_comer p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #nav_comer ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    #main_comer h1{
+        font-size: 35px;
+    }
+    #main_comer p{
+        font-size: 15px;
+    }
+    #section_comer{
+        height: 60%;
+    }
+    #section_comer ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width:480px){
+    #nav_comer ul li{
+        font-size: 12px;
+        margin: 8px;
+    }
+    #main_comer h1{
+        font-size: 20px;
+    }
+    #main_comer p{
+        font-size: 12px;
+    }
+    #section_comer{
+        height: 50%;
+    }
+    #section_comer ul li{
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+/*Pagina Entretenimiento*/
+.body_entre{
+    background-image: url(../ToyPaSalir/acces/images/teatro1.jpg);
+    background-size: cover;
+}
+/*nav_entretenimiento*/
+#nav_entre ul{
+    background-color: #071c41;
+    width: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    
+}
+#nav_entre ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #f251f9;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left:20px; 
+    margin-right:20px;
+}
+#nav_entre ul li:hover{
+    color: #071c41; 
+    background-color:#f251f9;
+    transition: all 0.5s;
+}
+/*main_entretenimiento*/
+#main_entre h1{
+    color: white;
+    font-family: 'Coustard', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+#main_entre p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+/*section_entretenimiento*/
+#section_entre{
+    background-color: #071c41a0;
+    height: 220px;
+}
+#section_entre{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin: 50px;
+}
+#section_entre ul li{
+    list-style: none;
+    font-family:'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 22px;
+    color: #f251f9;
+    margin: 20px;
+}
+/*media quarys*/
+@media screen and (max-width:1200px){
+    #nav_entre ul li{
+        font-size: 22px;
+    }
+    #main_entre h1{
+        font-size: 40px;
+    }
+    #main_entre p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #nav_entre ul li{
+        font-size: 20px;
+    }
+    #main_entre h1{
+        font-size: 38px;
+    }
+    #main_entre p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #nav_entre ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    #main_entre h1{
+        font-size: 35px;
+    }
+    #main_entre p{
+        font-size: 15px;
+    }
+    #section_comer{
+        height: 50%;
+    }
+    #section_entre ul li{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width:480px){
+    #nav_entre ul li{
+        font-size: 12px;
+        margin: 8px;
+    }
+    #main_entre h1{
+        font-size: 20px;
+    }
+    #main_entre p{
+        font-size: 12px;
+    }
+    #section_entre{
+        height: 40%;
+    }
+    #section_entre ul li{
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+/*pagina estadio*/
+
+.body_estadio{
+    background-image: url(../ToyPaSalir/acces/images/fiesta1.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#nav_estadio ul{
+    background-color: #f251f9;
+    width: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+
+#nav_estadio ul li{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    color: #071c41;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left:20px; 
+    margin-right:20px;
+}
+#nav_estadio ul li:hover{
+    color: #f251f9; 
+    background-color:#071c41;
+    transition: all 0.5s;
+}
+#header_estadio h1{
+    color: #f251f9;
+    font-family: 'Coustard', serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px;
+}
+#section_estadio header{
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+}
+#section_estadio header ul{
+    display: flex;
+    flex-direction: row;
+}
+#section_estadio header ul li{
+    list-style: none;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    margin: 20px;
+    text-align: center;
+}
+#section_estadio footer{
+    grid-area: footer;
+    justify-self: start;
+    align-self: center;
+    
+}
+#section_estadio footer p{
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    margin: 20px;
+}
+#section_estadio img{
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+    
+}
+#section_estadio div{
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+    
+}
+#section_estadio div img{
+    width: 100%;
+    
+}
+#section_estadio aside{
+    grid-area: aside;
+    justify-self: end;
+    align-self: center;
+    margin: 20px;
+}
+#section_estadio aside ul{
+    list-style: none;
+}
+#section_estadio{
+    background-color: #f351f952;
+   /* width: 1020px;*/
+    height: 450px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2.5fr .5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 50px;
+    grid-template-areas: 
+    "header header header"
+    "footer img aside";
+    justify-content: center;
+}
+
+ /** Footer general **/
+footer h2{
+    
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+footer article{ 
+    padding: 10px 10px;
+    margin: 20px;
+
+}
+/*media query*/
+@media screen and (max-width:1200px){
+    #nav_estadio ul li{
+        font-size: 22px;
+        
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #header_estadio h1{
+        font-size: 40px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #nav_estadio ul li{
+        font-size: 20px;
+    }
+    #header_estadio h1{
+        font-size: 38px;
+    }
+    #section_estadio header ul li{
+        font-size: 18px;
+        margin: 15px;
+    }
+    #section_estadio footer p{
+        font-size: 15px;
+        margin: 10px;
+    }
+    #section_estadio div img{
+        width: 80%;
+    }
+    #section_estadio{
+        width: 80%;
+    }
+    footer h2{
+        font-size: 18px;
+    }
+    footer article img{
+        width: 8%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #nav_estadio ul li{
+        font-size: 15px;
+        margin:10px;
+    }
+    #header_estadio h1{
+        font-size: 35px;
+        margin: 10px;
+    }
+    #section_estadio header ul li{
+        font-size: 20px;
+    }
+    #section_estadio footer p{
+        font-size: 18px;
+    }
+    #section_estadio div img{
+        width: 70%;
+        justify-self: center;
+    }
+    #section_estadio aside ul li{
+        display:inline-block;
+    }
+    #section_estadio{
+        height: 80%;
+        display: flex;
+        flex-direction:column;
+        margin: 70px;
+        justify-self: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:480px){
+    #nav_estadio ul li{
+        font-size: 12px;
+        margin:8px;
+    }
+    #header_estadio h1{
+        font-size: 25px;
+    }
+    #section_estadio header ul li{
+        font-size: 14px;
+        margin: 5px;
+    }
+    #section_estadio footer p{
+        font-size: 12px;
+        margin: 5px;
+    }
+    #section_estadio div img{
+        width: 50%;
+    }
+    #section_estadio aside ul li{
+        display:inline-block;
+    }
+    #section_estadio{
+        height: 75%;
+        display: flex;
+        flex-direction:column;
+        margin: 50px;
+        justify-content: center;
+    }
+    footer h2{
+        font-size: 10px;
+    }
+    footer article img{
+        width: 5%;
+    }
+}
+
